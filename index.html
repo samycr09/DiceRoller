@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
-    <head>
+<head>
         <!-- Recommended meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 
         <!-- PyScript CSS -->
         <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
@@ -19,24 +20,45 @@
             loading.showModal()
         </script>
 
-
         <!-- webpage title (shows in browser tab) -->
-        <title>Pyscript Web Dice Roller</title>
-    </head>
+        <title>My first webpage - Sandra Webpage</title>
+</head>
 
-    <body>
+<body>
+        <h1> Welcome to My First Webpage</h1>
+        <h1 class="bombers">Hello there!</h1>
+        <p>I am Sandra learning about IT and being involved in developing programming skills.
+    Also, enjoy watching and follow some funny Aussie comedians.</p>
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the
+server called "action_page.php".</p>
+
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
-        <!-- Start of your code -->
 
-        <div id="roll-history">asdffff</div>
-        <button type="button" py-change="roll_all_dice">Roll 'em!</button>
+        <!-- Start of your code -->
+        <button type="button" py-click="roll_all_dice">Roll 'try to!</button>
 
           <select name="dice" id="cars" py-change="select_face_option">
             <option value="2">Flip coin</option>
             <option value="6">6-sided Dice</option>
             <option value="10">10-side Dice</option>
             <option value="20">20-side Dice</option>
+
           </select>
+        <button type="button" py-click="clear_history">Roll 'clear!</button>
+
+        <div id="roll-history">RESULT</div>
+
+
+        <div>
 
 
 

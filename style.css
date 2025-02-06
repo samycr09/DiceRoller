@@ -1,0 +1,11 @@
+ .bombers {
+    color:rgb(255, 210, 0);
+    background-color:black;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+}
+#roll-history {
+    text-align: center;
+    justify-content: center
+}
